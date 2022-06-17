@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import { Home } from '../pages/Home'
 import { Detail } from '../pages/Detail'
@@ -6,13 +6,13 @@ import { Catalog } from '../pages/Catalog'
 
 const RoutesPage = () => {
   return (
-    <Routes>
-      <Route path='/:category/search/:keyword' element={<Catalog />} />
-      <Route path='/:category/:id' element={<Detail />} />
-      <Route path='/:category' element={<Catalog />} />
-      <Route path='/' element={<Home />} />
-    </Routes>
+    <Switch>
+      <Route path='/:category/search/:keyword' component={Catalog} />
+      <Route path='/:category/:id' component={Detail} />
+      <Route path='/:category' component={Catalog} />
+      <Route path='/' exact component={Home} />
+    </Switch>
   )
 }
 
-export default RoutesPage
+export { RoutesPage }

@@ -1,5 +1,11 @@
+import { HeroSlide } from '../components/hero-slide'
+
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <>
+      <HeroSlide />
+    </>
+  )
 }
 
 export { Home }

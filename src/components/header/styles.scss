@@ -1,9 +1,5 @@
 .logo {
   @apply text-4xl font-semibold flex items-center;
-
-  img {
-    @apply mr-0 w-7 sm:mr-2.5 sm:w-12;
-  }
 }
 
 .header {
@@ -14,7 +10,7 @@
   }
 
   &__wrap {
-    @apply flex items-center justify-center h-full px-8 sm:justify-between;
+    @apply flex items-center justify-center h-full py-0 px-8 container mx-auto sm:justify-between;
   }
 
   &__nav {
@@ -25,7 +21,7 @@
     }
 
     li {
-      @apply py-1 font-bold relative text-2xl after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-1/2 w-0 after:transition-all after:duration-500 after:ease-linear after:h-0.5 after:bg-main-color hover:after:w-full;
+      @apply py-1 px-0 font-bold relative text-2xl after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:transition-all after:duration-300 after:ease-linear after:h-0.5 after:bg-main-color hover:after:w-full;
 
       &.active {
         @apply after:w-full;

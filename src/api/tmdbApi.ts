@@ -18,32 +18,32 @@ export const tvType = {
 }
 
 const tmdbApi = {
-  getMoviesList: (type, params) => {
-    const url = 'movie/' + movieType[type]
+  getMoviesList: (type: string, params: object) => {
+    const url = 'movie/' + movieType[type as keyof typeof movieType]
     return axiosClient.get(url, params)
   },
-  getTvList: (type, params) => {
-    const url = 'tv/' + tvType[type]
+  getTvList: (type: string, params: object) => {
+    const url = 'tv/' + tvType[type as keyof typeof tvType]
     return axiosClient.get(url, params)
   },
   getVideos: (cate, id) => {
-    const url = category[cate] + '/' + id + '/videos'
+    const url = category[cate as keyof typeof category] + '/' + id + '/videos'
     return axiosClient.get(url, { params: {} })
   },
   search: (cate, params) => {
-    const url = 'search/' + category[cate]
+    const url = 'search/' + category[cate as keyof typeof category]
     return axiosClient.get(url, params)
   },
   detail: (cate, id, params) => {
-    const url = category[cate] + '/' + id
+    const url = category[cate as keyof typeof category] + '/' + id
     return axiosClient.get(url, params)
   },
   credits: (cate, id) => {
-    const url = category[cate] + '/' + id + '/credits'
+    const url = category[cate as keyof typeof category] + '/' + id + '/credits'
     return axiosClient.get(url, { params: {} })
   },
   similar: (cate, id) => {
-    const url = category[cate] + '/' + id + '/similar'
+    const url = category[cate as keyof typeof category] + '/' + id + '/similar'
     return axiosClient.get(url, { params: {} })
   },
 }

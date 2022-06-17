@@ -11,7 +11,7 @@ html {
     @apply font-montserrat bg-body-bg text-txt-color mb-12 sm:mb-0;
 
     a {
-      @apply no-underline text-inherit hover:text-main-color;
+      @apply no-underline text-inherit transition-colors hover:text-main-color;
     }
 
     button,

@@ -47,9 +47,9 @@ const Header = () => {
   return (
     <header ref={headerRef} className='header'>
       <div className='header__wrap'>
-        <div className='logo'>
-          <Link to='/'>React Movies App</Link>
-        </div>
+        <Link to='/' className='logo'>
+          React Movies App
+        </Link>
         <ul className='header__nav'>
           {headerNav.map(({ display, path }, i) => (
             <li key={i} className={i === active ? 'active' : ''}>
