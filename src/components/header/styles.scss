@@ -1,0 +1,35 @@
+.logo {
+  @apply text-4xl font-semibold flex items-center;
+
+  img {
+    @apply mr-0 w-7 sm:mr-2.5 sm:w-12;
+  }
+}
+
+.header {
+  @apply h-32 fixed top-0 left-0 w-full z-50 transition-all ease-linear duration-300;
+
+  &.shrink {
+    @apply h-20 bg-body-bg;
+  }
+
+  &__wrap {
+    @apply flex items-center justify-center h-full px-8 sm:justify-between;
+  }
+
+  &__nav {
+    @apply flex items-center fixed bottom-0 left-0 h-20 w-full bg-body-bg px-8 shadow-box-shadow justify-between sm:static sm:h-auto sm:w-auto sm:bg-inherit sm:px-0 sm:shadow-none sm:justify-start;
+
+    & > * ~ * {
+      @apply ml-0 sm:ml-8;
+    }
+
+    li {
+      @apply py-1 font-bold relative text-2xl after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-1/2 w-0 after:transition-all after:duration-500 after:ease-linear after:h-0.5 after:bg-main-color hover:after:w-full;
+
+      &.active {
+        @apply after:w-full;
+      }
+    }
+  }
+}

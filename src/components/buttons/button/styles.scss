@@ -1,0 +1,8 @@
+button {
+  @apply cursor-pointer font-montserrat;
+}
+
+.btn {
+  @apply border-4 border-solid border-transparent bg-main-color text-white rounded-border-radius py-2 px-7 text-2xl font-semibold
+   transition-shadow duration-300 ease-linear relative shadow-button hover:shadow-button-hover;
+}
