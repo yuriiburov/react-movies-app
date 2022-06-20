@@ -7,15 +7,15 @@
 
   &:hover span {
     @apply [&:nth-child(1)]:left-full [&:nth-child(1)]:duration-1000 
-      [&:nth-child(3)]:right-full [&:nth-child(3)]:duration-1000 [&:nth-child(3)]:delay-500 
-      [&:nth-child(2)]:right-full [&:nth-child(2)]:duration-1000 [&:nth-child(2)]:delay-500;
+      [&:nth-child(3)]:right-full [&:nth-child(3)]:duration-1000 [&:nth-child(3)]:delay-300
+      [&:nth-child(2)]:top-full [&:nth-child(2)]:duration-1000 [&:nth-child(2)]:delay-150;
   }
 
   span {
     @apply absolute block 
       [&:nth-child(1)]:top-0 [&:nth-child(1)]:-left-full [&:nth-child(1)]:w-full [&:nth-child(1)]:h-1 [&:nth-child(1)]:bg-gradient-to-r [&:nth-child(1)]:from-transparent [&:nth-child(1)]:to-main-color 
       [&:nth-child(3)]:bottom-0 [&:nth-child(3)]:-right-full [&:nth-child(3)]:w-full [&:nth-child(3)]:h-1 [&:nth-child(3)]:bg-gradient-to-l [&:nth-child(3)]:from-transparent [&:nth-child(3)]:to-main-color
-      [&:nth-child(2)]:-top-full [&:nth-child(2)]:-right-full [&:nth-child(2)]:w-full [&:nth-child(2)]:h-1 [&:nth-child(2)]:bg-gradient-to-l [&:nth-child(2)]:from-transparent [&:nth-child(2)]:to-main-color;
+      [&:nth-child(2)]:-top-full [&:nth-child(2)]:right-0 [&:nth-child(2)]:w-0.5 [&:nth-child(2)]:h-full [&:nth-child(2)]:bg-gradient-to-b [&:nth-child(2)]:from-transparent [&:nth-child(2)]:to-main-color;
   }
 }
 
