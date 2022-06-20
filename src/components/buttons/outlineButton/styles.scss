@@ -1,5 +1,22 @@
 .btn-outline {
-  @apply border-3 border-solid border-white text-white shadow-none transition-colors duration-300 hover:text-main-color hover:shadow-none bg-white;
+  /* @apply border-4 border-solid border-white text-white shadow-none transition-colors duration-300 bg-transparent hover:text-main-color hover:shadow-none hover:bg-white; */
+
+  @apply relative inline-block py-4 px-8 text-white uppercase -tracking-wide no-underline text-2xl overflow-hidden duration-200 bg-transparent;
+  /* delay-1000  
+     hover:text-main-color hover:bg-white hover:shadow-button-hover; */
+
+  &:hover span {
+    @apply [&:nth-child(1)]:left-full [&:nth-child(1)]:duration-1000 
+      [&:nth-child(3)]:right-full [&:nth-child(3)]:duration-1000 [&:nth-child(3)]:delay-500 
+      [&:nth-child(2)]:right-full [&:nth-child(2)]:duration-1000 [&:nth-child(2)]:delay-500;
+  }
+
+  span {
+    @apply absolute block 
+      [&:nth-child(1)]:top-0 [&:nth-child(1)]:-left-full [&:nth-child(1)]:w-full [&:nth-child(1)]:h-1 [&:nth-child(1)]:bg-gradient-to-r [&:nth-child(1)]:from-transparent [&:nth-child(1)]:to-main-color 
+      [&:nth-child(3)]:bottom-0 [&:nth-child(3)]:-right-full [&:nth-child(3)]:w-full [&:nth-child(3)]:h-1 [&:nth-child(3)]:bg-gradient-to-l [&:nth-child(3)]:from-transparent [&:nth-child(3)]:to-main-color
+      [&:nth-child(2)]:-top-full [&:nth-child(2)]:-right-full [&:nth-child(2)]:w-full [&:nth-child(2)]:h-1 [&:nth-child(2)]:bg-gradient-to-l [&:nth-child(2)]:from-transparent [&:nth-child(2)]:to-main-color;
+  }
 }
 
 .btn.small {

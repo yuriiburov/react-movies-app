@@ -38,11 +38,13 @@ module.exports = {
         'body-bg': '#0f0f0f',
         'main-color': '#ff0000',
         'txt-color': '#fff',
+        overlay: '#0006',
+        'transparent-black': 'rgba(0, 0, 0, 0)',
       },
       boxShadow: {
         'box-shadow': '0 7px 29px 0 rgba(100, 100, 111, 0.2)',
         button: '0 0 7px 8px #ff00004d',
-        'button-hover': '0 0 7px 15px #ff00004d',
+        'button-hover': '0 0 10px #ff00004d, 0 0 40px #ff00004d, 0 0 80px #ff00004d',
       },
       height: {
         'header-height': '8rem',

@@ -1,0 +1,15 @@
+.hero-slide {
+  @apply mb-12;
+}
+
+.hero-slide__item {
+  @apply py-36 w-full relative bg-center bg-cover bg-no-repeat before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-overlay after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-28 after:bg-gradient-to-t after:from-body-bg after:to-transparent-black;
+
+  &__content {
+    @apply container flex items-center justify-center;
+
+    &__info {
+      @apply w-3/5 px-12;
+    }
+  }
+}
